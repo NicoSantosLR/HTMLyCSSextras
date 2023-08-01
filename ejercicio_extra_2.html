@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Extra 2</title>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+  </head>
+  <body>
+    <div class="centrado">
+      <a href="index.html"> <button class="boton-inicio">Inicio</button></a>
+    </div>
+    <div>
+      <p>
+        Determinar las reglas CSS necesarias para mostrar la siguiente tabla con
+        el aspecto final mostrado en la imagen (modificar el código HTML que se
+        considere necesario añadiendo los atributos class oportunos).
+      </p>
+      <h3>Tabla original:</h3>
+      <table border="1" summary="Tipos de cambio">
+        <tr>
+          <th scope="col">Cambio</th>
+          <th scope="col">Compra</th>
+          <th scope="col">Venta</th>
+          <th scope="col">M&aacute;ximo</th>
+          <th scope="col">M&iacute;nimo</th>
+        </tr>
+        <tr>
+          <th scope="row">Euro/Dolar</th>
+          <td>1.2524</td>
+          <td>1.2527</td>
+          <td>1.2539</td>
+          <td>1.2488</td>
+        </tr>
+        <tr>
+          <th scope="row">Dolar/Yen</th>
+          <td>119.01</td>
+          <td>119.05</td>
+          <td>119.82</td>
+          <td>119.82</td>
+        </tr>
+        <tr>
+          <th scope="row">Libra/Dolar</th>
+          <td>1.8606</td>
+          <td>1.8611</td>
+          <td>1.8651</td>
+          <td>1.8522</td>
+        </tr>
+        <tr>
+          <th scope="row">Euro/Yen</th>
+          <td>149.09</td>
+          <td>149.13</td>
+          <td>149.79</td>
+          <td>148.96</td>
+        </tr>
+      </table>
+      <br />
+      <h3>Tabla final:</h3>
+      <table class="tablemoneda" summary="Tipos de cambio">
+        <tr>
+          <th class="tablehead" scope="col">Cambio</th>
+          <th class="tablehead" scope="col">Compra</th>
+          <th class="tablehead" scope="col">Venta</th>
+          <th class="tablehead" scope="col">M&aacute;ximo</th>
+          <th class="tablehead" scope="col">M&iacute;nimo</th>
+        </tr>
+        <tr class="alternatives_rows">
+          <th scope="row" class="tableheadvert">
+            <img src="images/euro.png" alt="Euro" />Euro/Dolar
+          </th>
+          <td class="tabledatos">1.2524</td>
+          <td class="tabledatos">1.2527</td>
+          <td class="tabledatos">1.2539</td>
+          <td class="tabledatos">1.2488</td>
+        </tr>
+        <tr>
+          <th scope="row" class="tableheadvert">
+            <img src="images/dolar.png" alt="Dolar" />Dolar/Yen
+          </th>
+          <td class="tabledatos">119.01</td>
+          <td class="tabledatos">119.05</td>
+          <td class="tabledatos">119.82</td>
+          <td class="tabledatos">119.82</td>
+        </tr>
+        <tr class="alternatives_rows">
+          <th scope="row" class="tableheadvert">
+            <img src="images/libra.png" alt="Libra" />Libra/Dolar
+          </th>
+          <td class="tabledatos">1.8606</td>
+          <td class="tabledatos">1.8611</td>
+          <td class="tabledatos">1.8651</td>
+          <td class="tabledatos">1.8522</td>
+        </tr>
+        <tr>
+          <th scope="row" class="tableheadvert">
+            <img src="images/yen.png" alt="Yen" />Euro/Yen
+          </th>
+          <td class="tabledatos">149.09</td>
+          <td class="tabledatos">149.13</td>
+          <td class="tabledatos">149.79</td>
+          <td class="tabledatos">148.96</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
